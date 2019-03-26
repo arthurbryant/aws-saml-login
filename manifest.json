@@ -4,6 +4,12 @@
   "description": "chrome extension for AWS samle login",
   "manifest_version": 2,
   "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://accounts.google.com/AccountChooser?continue=https://accounts.google.com/o/saml2/initsso?*from_login*"],
+      "js": ["jquery-3.3.1.min.js", "choose_account.js"]
+    }
+  ],
   "background": {
     "scripts": ["background.js"]
   },
