@@ -3,5 +3,8 @@
   "version": "1.0",
   "description": "chrome extension for AWS samle login",
   "manifest_version": 2,
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ]
 }
