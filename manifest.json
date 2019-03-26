@@ -4,7 +4,13 @@
   "description": "chrome extension for AWS samle login",
   "manifest_version": 2,
   "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {},
   "permissions": [
-    "storage"
+    "storage",
+    "tabs"
+    //"https://accounts.google.com/o/saml2/*"
   ]
 }
