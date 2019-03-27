@@ -1,7 +1,7 @@
 {
-  "name": "AWS saml login",
+  "name": "AWS Login via SAMLs",
   "version": "1.0",
-  "description": "chrome extension for AWS samle login",
+  "description": "One Click Login for AWS via SAML using Google account",
   "manifest_version": 2,
   "options_page": "options.html",
   "content_scripts": [
@@ -22,6 +22,5 @@
   "permissions": [
     "storage",
     "tabs"
-    //"https://accounts.google.com/o/saml2/*"
   ]
 }
