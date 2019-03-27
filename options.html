@@ -3,7 +3,9 @@
 <body>
 <h3>Please input your SSO link via SAML for AWS using Google account</h3>
 <form>
-  SSO Link via SAML(Google): <input id="saml_url" type="text" name="aws_saml_url" placeholder="https://accounts.google.com/o/saml2/initsso?idpid=xxx&spid=xxx&forceauthn=false"><br>
+  SSO Link via SAML(Google): <input id="saml_url" type="text" placeholder="https://accounts.google.com/o/saml2/initsso?idpid=xxx&spid=xxx&forceauthn=false"><br>
+  Google Account(Gmail):     <input id="google_account" type="email" placeholder="Google@gmail.com"><br>
+  AWS Account:               <input id="aws_account" type="text" placeholder="aws"><br>
   <input id="save" type="submit" value="Submit">
 </form>
 <div id="status"></div>
