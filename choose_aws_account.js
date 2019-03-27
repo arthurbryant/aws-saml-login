@@ -1,4 +1,4 @@
-chrome.storage.sync.get(['googleAccount'], function(items){
+chrome.storage.sync.get(['awsAccount'], function(items){
   var patten = new RegExp(items.awsAccount + " \\(.*");
   var titles = document.getElementsByClassName("saml-account-name");
   var index;
@@ -6,6 +6,7 @@ chrome.storage.sync.get(['googleAccount'], function(items){
     var text = titles[i].textContent;
     if (patten.test(text)) {
       index = i;
+      break;
     }
   }
 
@@ -15,4 +16,3 @@ chrome.storage.sync.get(['googleAccount'], function(items){
 
   document.getElementById("signin_button").click();
 });
-
