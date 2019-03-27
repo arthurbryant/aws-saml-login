@@ -1,0 +1,4 @@
+## TODO
+- [ ] save google account and aws account at option page
+- [ ] deal with option not configed.
+- [ ] force to load config after save options
