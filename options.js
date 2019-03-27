@@ -18,9 +18,9 @@ function save_options() {
 
 function restore_options() {
   chrome.storage.sync.get(['samlUrl', 'googleAccount', 'awsAccount'], function(items){
-    document.getElementById('saml_url').value = items.samlUrl;
-    document.getElementById('google_account').value = items.googleAccount;
-    document.getElementById('aws_account').value = items.awsAccount;
+    document.getElementById('saml_url').value = items.samlUrl || "";
+    document.getElementById('google_account').value = items.googleAccount || "";
+    document.getElementById('aws_account').value = items.awsAccount || "";
   });
 }
 
