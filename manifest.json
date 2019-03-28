@@ -1,5 +1,5 @@
 {
-  "name": "AWS Login via SAMLs",
+  "name": "AWS Login via SAML",
   "version": "1.0",
   "description": "One Click Login for AWS via SAML using Google account",
   "manifest_version": 2,
