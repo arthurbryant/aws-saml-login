@@ -3,6 +3,9 @@ Chrome extension developer tool: **Automatically login to your AWS Console** via
 
 Make your life of logining to AWS console easier. Especial useful when you have multiple Google accounts and multiple AWS accounts.
 
+# Chrome Web Store
+https://chrome.google.com/webstore/detail/auto-aws-login-via-saml/nliflknbgjenggmckjokjmfbhbgfoehh?hl=ja
+
 # Usage
 Click extension icon and setup at option page.
 
