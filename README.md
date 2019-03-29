@@ -8,7 +8,7 @@ Click extension icon and setup at option page.
 
 - option page
 
-![option](https://user-images.githubusercontent.com/853200/55082018-44e2f180-50e4-11e9-8f51-ec7e44413003.png)
+![full2](https://user-images.githubusercontent.com/853200/55218910-c9e61c00-5246-11e9-8302-202292c1c820.png)
 
 - aws login link
 
