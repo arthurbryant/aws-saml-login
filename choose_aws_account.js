@@ -1,5 +1,5 @@
 chrome.storage.sync.get(['awsAccount'], function(items){
-  var patten = new RegExp(items.awsAccount + " \\(.*");
+  var patten = new RegExp(items.awsAccount + ".*");
   var titles = document.getElementsByClassName("saml-account-name");
   var index;
   for(var i = 0; i < titles.length; ++i) {
