@@ -1,7 +1,7 @@
 # Introduction
-Chrome extension: **one click** to login AWS Console via SAML using Google Account.
+Chrome extension developer tool: **Automatically login to your AWS Console** via SAML using Google Account.
 
-Make your life with logining into AWS console easier. Especial useful when you have multiple Google accounts and multiple AWS accounts.
+Make your life of logining to AWS console easier. Especial useful when you have multiple Google accounts and multiple AWS accounts.
 
 # Usage
 Click extension icon and setup at option page.
