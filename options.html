@@ -7,13 +7,13 @@
 <h3>Please fill the following form and then click the extension icon to login!</h3>
 <form>
   <fieldset>
-    <label>AWS Console Login Link from G Suite:</label>
-    <input id="saml_url" type="text" placeholder="https://accounts.google.com/o/saml2/initsso?idpid=xxx&spid=xxx&forceauthn=false"><br><br>
+    <label>AWS Console Login Link from G Suite</label>
+    <input id="saml_url" type="url" placeholder="https://accounts.google.com/o/saml2/initsso?idpid=xxx&spid=xxx&forceauthn=false" required="required"><br><br>
 
-    <label>Google Account:</label>
+    <label>Google Account</label>
     <input id="google_account" type="email" placeholder="your-work-gmail@gmail.com"><br><br>
 
-    <label>AWS Account:</label>
+    <label>AWS Account</label>
     <input id="aws_account" type="text" placeholder="aws-account"><br><br>
 
     <input id="save" type="submit" value="save">
