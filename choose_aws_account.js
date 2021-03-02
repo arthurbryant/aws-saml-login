@@ -1,14 +1,14 @@
 chrome.storage.sync.get(['awsAccount'], function(items) {
-  let titles = document.getElementsByClassName("saml-account-name");
+  let awsAccountElements = document.getElementsByClassName("saml-account-name");
   let index = 0;
 
-  if(titles.length > 1) {
+  if(awsAccountElements.length > 1) {
     let pattern = new RegExp(items.awsAccount + ".*");
-    for(let i = 0; i < titles.length; ++i) {
-      let text = titles[i].textContent;
-      if (pattern.test(text)) {
+    for(let i = 0; i < awsAccountElements.length; ++i) {
+      let accountName = awsAccountElements[i].textContent;
+      if (pattern.test(accountName)) {
         index = i;
-        console.log("Found aws accout: " + items.awsAccount);
+        console.log("Found aws account: " + items.awsAccount);
 
         break;
       }
