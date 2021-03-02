@@ -1,14 +1,14 @@
 function save_options() {
-  var awsSamlUrl = document.getElementById('saml_url').value;
-  var googleAccount = document.getElementById('google_account').value;
-  var awsAccount = document.getElementById('aws_account').value;
+  let awsSamlUrl = document.getElementById('saml_url').value;
+  let googleAccount = document.getElementById('google_account').value;
+  let awsAccount = document.getElementById('aws_account').value;
 
   chrome.storage.sync.set({
     samlUrl: awsSamlUrl,
     googleAccount: googleAccount,
     awsAccount: awsAccount
     }, function(){
-      var status = document.getElementById('status');
+      let status = document.getElementById('status');
       status.textContent = "Option saved";
       setTimeout(function(){
         status.textContent = '';
