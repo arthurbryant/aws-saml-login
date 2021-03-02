@@ -1,14 +1,15 @@
 chrome.storage.sync.get(['googleAccount'], function(items){
-  var btns = document.getElementsByTagName("button");
-  if(btns.length == 1) {
-    btns[0].click();
+  let loginElements = document.querySelectorAll('[data-identifier]');
+  if(loginElements.length == 1) {
+    loginElements[0].click();
   }
   else {
-    var patten = new RegExp(items.googleAccount);
+    let patten = new RegExp(items.googleAccount);
     if(items.googleAccount) {
-      for(var i = 0; i < btns.length; ++i) {
-        if(patten.test(btns[i].value)) {
-          btns[i].click();
+      for(let i = 0; i < loginElements.length; ++i) {
+        let email = loginElements[i].getAttribute("data-identifier");
+        if(patten.test(email)) {
+          loginElements[i].click();
         }
       }
     }
