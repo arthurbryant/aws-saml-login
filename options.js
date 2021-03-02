@@ -3,17 +3,22 @@ function save_options() {
   let googleAccount = document.getElementById('google_account').value;
   let awsAccount = document.getElementById('aws_account').value;
 
-  chrome.storage.sync.set({
-    samlUrl: awsSamlUrl,
-    googleAccount: googleAccount,
-    awsAccount: awsAccount
+  if (awsSamlUrl) {
+    chrome.storage.sync.set({
+      samlUrl: awsSamlUrl,
+      googleAccount: googleAccount,
+      awsAccount: awsAccount
     }, function(){
       let status = document.getElementById('status');
       status.textContent = "Option saved";
       setTimeout(function(){
         status.textContent = '';
       }, 3000);
-  });
+    });
+  }
+  else {
+    alert('AWS Console Login Link from G Suite needs to to set to use this extension!')
+  }
 }
 
 function restore_options() {
