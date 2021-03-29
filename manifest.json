@@ -6,14 +6,16 @@
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["https://accounts.google.com/AccountChooser?continue=https://accounts.google.com/o/saml2/initsso?*from_login*"],
+      "matches": [
+        "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?*",
+        "https://accounts.google.com/AccountChooser/signinchooser?*"
+      ],
       "js": ["choose_google_account.js"]
     },
     {
       "matches": ["https://signin.aws.amazon.com/saml"],
       "js": ["choose_aws_account.js"]
     }
-
   ],
   "background": {
     "scripts": ["background.js"]
